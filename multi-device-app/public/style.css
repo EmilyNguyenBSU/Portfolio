@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.3em;
+}
+main {
+    margin: 0 50px;
+}
+a {
+    text-decoration: none;
+    color: green;
+}
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    border-bottom: 1px solid;
+}
+.logo-section {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: grey;
+}
+
+nav ul li a:hover {
+    background-color: greenyellow;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#social-link {
+    margin: 20px 0px;
+}
+.author {
+    padding: 30px;
+    background-color: yellow;
+    column-gap: 0;
+    margin-top: 30px;
+    align-items: stretch;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-areas:  /* make sure that the author picture is always on top of information */
+        "image"
+        "info";
+    grid-gap: 12px; /* Add some space between the image and text */
+    align-items: center;
+}
+.author-info {
+    grid-area: info;
+    text-align: center;
+}
+.author-info h1 {
+    margin-top: 10px;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.author-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-image img {
+    border-radius: 50%;
+    border: 3px solid #000; /* Optional border for the image */
+    background-color: green;
+    width: 200px; /* Image size for mobile/tablet */
+}
+.button {
+    margin-top: 30px;
+    display:inline-block;
+    padding: 10px 30px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    transition: ease 0.3s all;
+    &:hover {
+        text-decoration: none;
+        background-color: darkgreen;
+    }
+}
+.about-me {
+    padding: 30px;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    gap: 30px;
+    margin: 30px;
+}
+.about-me h2 {
+    font-size: 2em;
+    display:flex;
+    justify-content: center;
+}
+.about-me p {
+    margin: 10px;
+    background-color: yellow;
+    color: black;
+    border-radius: 30px;
+    padding: 15px;
+
+}
+.skill{
+    background-color: lightgrey;
+    border-radius: 30px;
+    margin-top: 0;
+    margin: 30px;
+}
+.icon {
+    max-width: 100%;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: icon 30s linear infinite;
+    display: flex;
+    gap: 10px;
+}
+@keyframes icon {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-44.9%);
+    }
+}
+h3{
+    font-size: 2em;
+    text-align: center;
+    margin: 25px 00px;
+}
+.blue-holder {
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#left-column ul{
+    list-style-type: none;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+#left-column li {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 15px;
+    margin: 10px;
+} 
+#right-column p {
+    margin: 15px 0px;
+}
+.jobs {
+    margin: 0px 50px;
+}
+.jobs img {
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+#place {
+    background-color: yellowgreen;
+    border-radius: 30px;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 20px;
+}
+#place2 {
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 20px;
+}
+#job-title{
+    margin: 10px;
+} 
+.contact-box {
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer{
+    background-color: lightgrey;
+    padding: 30px;
+    text-align: center;
+}
+/* Tablet (720px-1024px) */
+@media (min-width: 720px) {
+    .logo-section {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        font-weight: 600;
+    }
+    .logo-section .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background-color: green;
+        color: yellow;
+        height: 64px;
+        width: 64px;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    .logo-section .logo-text {
+        flex: 1;
+        color: grey;
+    }
+    .author {
+        display: flex;
+        gap: 40px;
+    }
+    .author-info {
+        flex-direction: row; /* Stack the image and text vertically on smaller screens */
+        text-align:left; /* Center-align text for mobile */
+        margin: 10px;
+    }
+    .author-image img {
+        flex-direction: row; /* Stack the image and text vertically on smaller screens */
+        text-align: right; 
+        width: 200px;
+    }
+    .blue-holder {
+        display: flex;
+    }
+    #left-column {
+        flex: 1;      
+    }
+    #right-column {
+        flex: 1;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    main {
+        margin: 0 150px;
+    }
+    .author-image img {
+        width: 250px; 
+    }
+    .jobs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* 1.https://www.w3schools.com/howto/howto_css_contact_form.asp*/

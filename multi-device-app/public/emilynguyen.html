@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- (1) Setting the viewport to make your website look good on all devices -->
+    <title>Emily Nguyen interactive portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script scr = "index.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo-section">
+            <div class="logo">E</div>
+            <div class="logo-text"> Emily Nguyen</div>
+        </a>
+
+        <nav>
+            <ul id="menu">
+                <li> 
+                    <a href="#author">About me</a> 
+                </li>
+                <li> 
+                    <a href="#myskill">Skills</a> 
+                </li>     
+                <li> 
+                    <a href="#experiences">Experiences</a> 
+                </li> 
+                <li> 
+                    <a href="#contactme">Contact me</a> 
+                </li>   
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <section class = "author" id="author">
+            <div class="author-info">
+                <h2>Hi, I'm </h2>
+                <h1>Emily Nguyen</h1>
+                <p>Computer Science student with diverse experiences in both the HOSPITALITY and RETAIL SECTOR.</p>
+                <div class="contact-action">
+                    <a href="./asset/CV.pdf" class="button"> View CV</a>
+                    <a href="mailto:hanguyennhat2709@gmail.com" class="button"> Contact me</a>
+                </div>
+                <div id="social-link">
+                    <a href="https://github.com/BSU-web-dev/web-dev-ii-24-25-EmilyNguyenBSU.git"> <img src ="./asset/github.png" alt="Github" width="50"> </a>
+                </div>
+            </div>
+            <div class="author-image">
+                <img src="./asset/photo.png" alt="Emily Nguyen" width="100%">
+            </div>
+        </section>
+
+        <section class="skill">
+            <div class="icon">
+                <div class="track">
+                    <img src ="./asset/html.png" alt="HTML" width="130">
+                    <img src ="./asset/javascript.png" alt="Javascript" width="130">
+                    <img src ="./asset/css.png" alt="CSS" width="130">
+                    <img src ="./asset/vscode.png" alt="VScode" width="130">
+                    <img src ="./asset/c++.png" alt="C++" width="130">
+                    <img src ="./asset/python.png" alt="Python" width="130">
+                    <img src ="./asset/html.png" alt="HTML" width="130">
+                    <img src ="./asset/javascript.png" alt="Javascript" width="130">
+                    <img src ="./asset/css.png" alt="CSS" width="130">
+                    <img src ="./asset/vscode.png" alt="VScode" width="130">
+                    <img src ="./asset/c++.png" alt="C++" width="130">
+                    <img src ="./asset/python.png" alt="Python" width="130">
+                    <img src ="./asset/html.png" alt="HTML" width="130">
+                </div>
+            </div>
+        </section> 
+        
+        <section class="myskill" id="myskill">
+            <h3> Skills</h2>
+            <div class="blue-holder">
+                <div id="left-column">
+                    <h4> Frontend </h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <h4> Backend </h4>  
+                    <ul>
+                        <li>Node.js</li>
+                        <li>C++</li>
+                        <li>Python</li> 
+                    </ul>   
+                </div>
+                <div id="right-column">
+                    <h4> About me</h4>
+                    <p> Hi, I am <b>Emily Nguyen</b>. With <b>diverse experiences</b> in both the <b>hospitality and retail sector</b>, I am passionate about exploring the transformative power of <b>AI</b> to revolutionize user experiences. My expertise lies in understanding user needs, solving problems, and delivering impactful solutions that ensure satisfaction. Leveraging industry-standard <b>UX Design tools</b> like <b>Figma and Adobe Express</b>, I craft intuitive and user-centered designs that merge functionality with innovation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <section class="experiences" id="experiences">
+            <h3>Experiences</h3>
+            <div class="jobs">
+                <article id="place">
+                    <figure>
+                        <img src ="./asset/STARBUCKS.png" alt="Starbucks" width="300px" height="200px">
+                    </figure>
+                    <div id="job-title">
+                        <h4>Barista at Starbucks</h4>
+                        <p>2022</p>
+                    </div>
+                    <p>Working at Starbucks store located on a university campus can provide me with valuable Skills that go beyond just making coffee.</p>
+                </article>
+                <article id="place2">
+                    <figure>
+                        <img src ="./asset/ZARA.png" alt="ZARA" width="300px" height="200px">
+                    </figure>
+                    <div id="job-title">
+                        <h4>Sales Assistant Stockroom at ZARA</h4>
+                        <p>2023 - 2024</p>
+                    </div>
+                    <p>Working in the Kidswear department of ZARA store involves responsibilities contribute to the overall success of the store.</p>
+                </article>
+                <article id="place">
+                    <figure>
+                        <img src ="./asset/GBS.png" alt="Gainsborough Bath Spa Hotel" width="300px" height="200px">
+                    </figure>
+                    <div id="job-title">
+                        <h4>Food and Beverage Attendant at The Gainsborough Bath Spa Hotel</h4>
+                        <p>2024</p>
+                    </div>
+                    <p>I have immense pride in delivering exceptional service to customers in a small luxury 5-star hotel.</p>
+                </article>
+            </div>
+        </section>
+    <main>
+        <section class="contact-me" id="contactme">
+            <h3>Contact Me</h3>
+            <div class="contact-box">
+                <form >
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="Your email...">
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject...">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+        
+   
+   <footer>
+        <p>07576803852 | hanguyennhat2709@gmail.com</p>  
+   </footer>
+</body>
+</html>
